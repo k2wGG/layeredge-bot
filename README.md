@@ -22,7 +22,7 @@
 ### 1. Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/Dmkls/layeredge-auto.git
+git clone https://github.com/k2wGG/layeredge-bot.git
 cd layeredge-auto
 ```
 
@@ -134,11 +134,3 @@ python main.py
   Если фарминг остановлен, переместите приватные ключи из `results/success.txt` в `configs/farm.txt` и установите `FARM_MODE = True` в `configs/config.py`.
 
 ---
-
-## Контрибьюция
-
-Если у вас есть предложения по улучшению или вы обнаружили ошибки, пожалуйста, создайте Issue или отправьте Pull Request в репозиторий на GitHub.
-
----
-
-Эта инструкция поможет вам быстро запустить и настроить проект **LayerEdge Auto**. Если возникнут вопросы или проблемы, обращайтесь в Issues репозитория.
