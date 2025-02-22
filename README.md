@@ -13,5 +13,3 @@ Quick start
 5. run `START.txt`
 
 After the account is registered, it immediately starts farming, you do not need to restart the soft to start farming, but if you stop it, you need to move the private keys from `results/success.txt` to `configs/farm.txt` and in the `configs/config`: `FARM_MODE = True`
-
-Best proxy - [NodeMaven](https://nodemaven.com/?ref_id=e0ff048c)
