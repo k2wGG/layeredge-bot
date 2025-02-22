@@ -3,11 +3,13 @@ from configs.constants import REGISTER_PATH, FARM_PATH, WALLETS_TO_REFS_PATH, PR
 from configs.constants import FAILED_PATH, SUCCESS_PATH, ACCS_REFS_PATH
 
 def read_json(path: str, encoding: str | None = None) -> list | dict:
-    return json.load(open(path, encoding=encoding))
+    with open(path, encoding=encoding) as f:
+        return json.load(f)
 
 def read_file(path: str):
     with open(path, encoding='utf-8') as file:
-        return [line.strip() for line in file]
+        # Возвращаем только непустые строки
+        return [line.strip() for line in file if line.strip()]
 
 def read_farm() -> list[str]:
     return read_file(FARM_PATH)
