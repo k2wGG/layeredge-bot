@@ -21,4 +21,3 @@ class Console:
 
     def build(self) -> None:
         self.show_dev_info()
-        self.display_info()
