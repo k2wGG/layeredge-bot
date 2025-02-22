@@ -52,12 +52,14 @@ timeout: int = 10
                     return status, response_json
             except ClientHttpProxyError:
                 logger.error(f"{wallet_address} | Bad proxy: {proxy}")
-                if retries % _ == 1:
+                # Если это не последняя попытка, меняем прокси
+                if _ + 1 < retries:
                     proxies = read_proxies()
                     proxy = choice(proxies[int(len(proxies)/1.5):])
                     logger.error(f"{wallet_address} | Changed proxy: {proxy}")
-                if _+1 == retries:
+                else:
                     return 400, {}
+
             except ClientResponseError:
                 try:
                     return status, response_json
