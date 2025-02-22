@@ -19,13 +19,6 @@ class Console:
         self.rich_console.print(f"{ascii_art}")
         print()
 
-    def display_info(self):
-        color = 'green3'
-        self.rich_console.print(f"[{color}]github:   github.com/Dmkls[/{color}]")
-        self.rich_console.print(f"[{color}]telegram: t.me/MagniFier01Chin[/{color}]")
-        print()
-        print()
-
     def build(self) -> None:
         self.show_dev_info()
         self.display_info()
