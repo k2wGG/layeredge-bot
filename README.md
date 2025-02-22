@@ -23,7 +23,7 @@
 
 ```bash
 git clone https://github.com/k2wGG/layeredge-bot.git
-cd layeredge-auto
+cd layeredge-bot
 ```
 
 ### 2. Создайте виртуальное окружение (опционально)
