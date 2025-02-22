@@ -10,7 +10,7 @@ from configs import config
 def print_menu():
     print()
     print("=== LayerEdge Interactive Menu ===")
-    print("1) Запустить регистрацию аккаунтов + фарм 24/7")
+    print("1) Запустить регистрацию аккаунтов")
     print("2) Запустить фарм 24/7")
     print("3) Получить реферальные коды")
     print("4) Настроить скрипт")
