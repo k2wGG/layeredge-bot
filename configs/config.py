@@ -1,6 +1,3 @@
-REGISTER_MODE = False
-FARM_MODE = True
-
 # ┏━━━━━━━━━━━━━━━━━━━━━━━━┓
 # ┃     REFERRAL TIMING    ┃
 # ┗━━━━━━━━━━━━━━━━━━━━━━━━┛
