@@ -12,6 +12,11 @@ RESULTS_DIR = os.path.join(ROOT_DIR, "results")
 CONFIGS_DIR = os.path.join(ROOT_DIR, "configs")
 DATA_DIR = os.path.join(ROOT_DIR, "data")
 
+# Создаём необходимые директории, если они не существуют
+for directory in (LOG_DIR, RESULTS_DIR, CONFIGS_DIR, DATA_DIR):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
 FAILED_PATH = os.path.join(RESULTS_DIR, 'failed.txt')
 SUCCESS_PATH = os.path.join(RESULTS_DIR, 'success.txt')
 ACCS_REFS_PATH = os.path.join(RESULTS_DIR, 'accounts_refs.txt')
