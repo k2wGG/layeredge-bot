@@ -1,5 +1,6 @@
 import asyncio
 import sys
+sys.stdout.reconfigure(encoding='utf-8')
 
 from utils.Console import Console
 from core import register, farm, db
